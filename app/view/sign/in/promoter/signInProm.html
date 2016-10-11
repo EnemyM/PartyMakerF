@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-md-10 col-sm-10"></div>
+    <div class="animated slideInRight col-md-2 col-sm-2 ng-cloak">
+        <ul class="menu">
+            <li><a href="#/welcome" class="link">Welcome Page</a></li>
+            <!--<li ng-show="authenticated"><a href="#/signOut" class="link">Sign Out</a></li>
+            <li ng-show="authenticated"><a href="#/greeting" class="link">Greeting</a></li>-->
+        </ul>
+    </div>
+</div>
+<form method="post" name="signIn" class="si-form"
+      ng-app="myApp" ng-controller="SignInController as signIn" ng-submit="signIn.signIn()">
+    <fieldset title="Sign On form">
+        <legend align="center" class="m-top-10">Sign In</legend>
+        <br>
+        <label for="email" class="label m-top-10">Email:</label><br>
+        <input type="text" name="email" class="signInput" id="email" ng-model="signIn.credentials.email"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" name="password" id="password" placeholder="" class="signInput"
+               ng-model="signIn.credentials.password"><br>
+        <button type="submit" class="submit m-top-10" ng-disabled="">Sign In</button>
+    </fieldset>
+</form>
+<div class="m-top-10" style="padding-left: 1px">No account ?<a href="#/signUpP" style="margin-left: 130px" class="link">Sign
+    Up</a></div>
+<!--
+<div ng-controller="SignInController as signIn" class="alert alert-danger" ng-show="signIn.error">
+    There was a problem logging in. Please try again.
+</div>-->

@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-md-10 col-sm-10"></div>
+    <div class="animated slideInRight col-md-2 col-sm-2 ng-cloak">
+        <ul class="menu">
+            <li><a href="#/welcome" class="link">Welcome Page</a></li>
+            <!--<li ng-show="authenticated"><a href="#/signOut" class="link">Sign Out</a></li>
+            <li ng-show="authenticated"><a href="#/greeting" class="link">Greeting</a></li>-->
+        </ul>
+    </div>
+</div>
+<form method="" name="signUpPromForm" class="su-form" action="">
+    <fieldset title="Sign Up form">
+        <legend align="center">Sign Up</legend><br>
+
+        <!--<label for="firstName" class="m-top-10">First name:</label><br>
+        <input type="text" name="firstName" class="signInput " id="firstName" placeholder="Enter your first name"><br>
+-->
+        <label class="label" for="nickName">Nick name:</label><br>
+        <input type="text" name="nickName" class="signInput" id="nickName" placeholder="Take own nick "><br>
+
+        <label class="label" for="phoneNumber"></label>Phone number:<br>
+        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="+380" class="signInput"><br>
+
+        <label class="label" for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="" class="signInput"><br>
+
+        <label class="label" for="password">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="" class="signInput"><br>
+
+        <label class="label" for="confirmPassword">Confirm Password:</label><br>
+        <input type="password" id="confirmPassword" name="password" placeholder="" class="signInput"><br>
+
+        <input type="submit" value="Sign up" class="submit m-top-10" ng-disabled="signUpForm.$pristine">
+    </fieldset>
+</form>
+<div class="m-top-10" style="padding-left: 1px">Back to<a href="#/signInG" class="link" style="margin-left: 180px">Sign In</a></div>
